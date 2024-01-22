@@ -15,9 +15,11 @@ public class HelloApplication extends Application {
         stage.setTitle("hey there!");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
         launch();
+        System.out.println("This is the test for git");
     }
 }
