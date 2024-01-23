@@ -16,23 +16,10 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-//        stage.setTitle("hey there!");
-//        stage.setScene(scene);
-//        stage.show();
-        GridPane root = new GridPane();
-        root.setAlignment(Pos.CENTER);
-        root.setHgap(10);
-        root.setVgap(10);
-
-        Label greetings = new Label("Welcome to new app");
-        greetings.setTextFill(Color.GREEN);
-        greetings.setFont(Font.font("Times New Roman", FontWeight.BOLD, 70));
-        root.getChildren().add(greetings);
-
-        stage.setTitle("JavaFX");
-        stage.setScene(new Scene(root, 700, 300));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 720, 240);
+        stage.setTitle("hey there!");
+        stage.setScene(scene);
         stage.show();
     }
 
