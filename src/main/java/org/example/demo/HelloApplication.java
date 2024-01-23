@@ -20,6 +20,6 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch();
-        System.out.println("This is the test for git");
+        System.out.println("This is the second test for git");
     }
 }
