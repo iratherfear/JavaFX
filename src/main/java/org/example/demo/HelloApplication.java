@@ -6,6 +6,9 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,10 +27,12 @@ public class HelloApplication extends Application {
         root.setVgap(10);
 
         Label greetings = new Label("Welcome to new app");
+        greetings.setTextFill(Color.GREEN);
+        greetings.setFont(Font.font("Times New Roman", FontWeight.BOLD, 70));
         root.getChildren().add(greetings);
 
         stage.setTitle("JavaFX");
-        stage.setScene(new Scene(root, 300, 300));
+        stage.setScene(new Scene(root, 700, 300));
         stage.show();
     }
 
