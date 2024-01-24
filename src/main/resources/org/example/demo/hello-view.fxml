@@ -10,19 +10,21 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.BorderPane?>
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController">
-  <top>
-    <Label text="Welcome to JavaFX" alignment="CENTER" style="-fx-border-color: blue; fx-border-width: 3" BorderPane.alignment="TOP_CENTER"/>
-  </top>
-  <bottom>
-    <HBox spacing="10" alignment="BOTTOM_RIGHT">
-      <padding>
-        <Insets bottom="10" right="10"/>
-      </padding>
-
-      <Button text="Okay" prefWidth="90"/>
-      <Button text="Cancel" prefWidth="90"/>
-      <Button text="Help" prefWidth="90"/>
-    </HBox>
-  </bottom>
-</BorderPane>
+<?import javafx.scene.layout.FlowPane?>
+<FlowPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" orientation="VERTICAL">
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+  <Button text="Press Buttone"/>
+</FlowPane>
