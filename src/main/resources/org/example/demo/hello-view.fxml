@@ -13,11 +13,23 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.StackPane?>
-<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController">
-  <Button text="Press Buttone country road take me home" style="-fx-background-color: red"/>
-  <Button text="Press Buttone i hear" style="-fx-background-color: blue"/>
-  <!--
-    In this last element in the stack pane will appear at the top. Anything below it will be shown only if it's length/breadth is greater than the above.
-    Can be used to add text over image or vice versa.
-  -->
-</StackPane>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" alignment="BOTTOM_CENTER">
+  <Button text="button" style="-fx-background-color: blue" GridPane.rowIndex="1" GridPane.columnSpan="1">
+    <Label text="Heii"/>
+  </Button>
+  <fx:define>
+    <ToggleGroup fx:id="colorToggleGroup"/>
+  </fx:define>
+  <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="0" text="Red" toggleGroup="$colorToggleGroup"/>
+  <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="1" text="Blue" toggleGroup="$colorToggleGroup"/>
+  <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Yellow" toggleGroup="$colorToggleGroup"/>
+
+  <padding>
+    <Insets bottom="10"/>
+  </padding>
+</GridPane>
