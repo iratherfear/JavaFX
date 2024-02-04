@@ -4,6 +4,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" alignment="CENTER">
-  <TextField fx:id="nameField" GridPane.rowIndex="0"/>
-  <Button text="Say Hello" GridPane.rowIndex="1" onAction="#onHelloButtonClick" />
+  <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+  <Button fx:id="helloButton" text="Say Hello" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#onHelloButtonClick" />
+  <Button fx:id="byeButton" text="Say Bye" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#onHelloButtonClick" />
 </GridPane>
