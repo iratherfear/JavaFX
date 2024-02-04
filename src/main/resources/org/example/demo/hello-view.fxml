@@ -15,60 +15,16 @@
 
 <?import java.lang.String?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" alignment="CENTER">
-  <Button text="button" style="-fx-background-color: blue" GridPane.rowIndex="0" GridPane.columnIndex="0">
-    <Label text="Heii"/>
-  </Button>
 
-  <VBox GridPane.rowIndex="0" GridPane.columnIndex="1">
-    <fx:define>
-      <ToggleGroup fx:id="colorToggleGroup"/>
-    </fx:define>
-    <RadioButton text="Red" toggleGroup="$colorToggleGroup"/>
-    <RadioButton text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
-    <RadioButton text="Yellow" toggleGroup="$colorToggleGroup"/>
-  </VBox>
-
-  <VBox GridPane.rowIndex="0" GridPane.columnIndex="2">
-    <CheckBox text="Wanna join?"/>
-    <CheckBox text="Wanna join?"/>
-    <CheckBox text="Wanna join?"/>
-    <CheckBox text="Wanna join?"/>
-  </VBox>
-  <VBox GridPane.rowIndex="0" GridPane.columnIndex="3">
-    <ToggleButton text="Press"/>
-    <ToggleButton text="Press"/>
-    <ToggleButton text="Press"/>
-  </VBox>
-
-  <TextField GridPane.rowIndex="1" GridPane.columnIndex="0" />
-  <PasswordField GridPane.rowIndex="1" GridPane.columnIndex="1" />
-  <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="2">
-    <items>
-      <FXCollections fx:factory="observableArrayList">
-        <String fx:value="Option 1"/>
-        <String fx:value="Option 2"/>
-        <String fx:value="Option 3"/>
-        <String fx:value="Option 4"/>
-        <String fx:value="Opiont 5"/>
-      </FXCollections>
-    </items>
-    <value>
-      <String fx:value="Choose"/>
-    </value>
-  </ComboBox>
-
-  <ChoiceBox GridPane.rowIndex="1" GridPane.columnIndex="4">
-    <items>
-      <FXCollections fx:factory="observableArrayList">
-        <String fx:value="Option 1"/>
-        <String fx:value="Option 2"/>
-        <String fx:value="Option 3"/>
-        <String fx:value="Option 4"/>
-        <String fx:value="Opiont 5"/>
-      </FXCollections>
-    </items>
-  </ChoiceBox>
+    <Slider GridPane.rowIndex="0" min="0" max="100" showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
+    <Spinner GridPane.rowIndex="1" min="0" max="100" editable="true" initialValue="50" />
+    <ColorPicker GridPane.rowIndex="2" />
+    <DatePicker GridPane.rowIndex="3" />
 
   <padding>
     <Insets bottom="10"/>
