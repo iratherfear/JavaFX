@@ -19,13 +19,25 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" alignment="CENTER">
 
-    <Slider GridPane.rowIndex="0" min="0" max="100" showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
-    <Spinner GridPane.rowIndex="1" min="0" max="100" editable="true" initialValue="50" />
-    <ColorPicker GridPane.rowIndex="2" />
-    <DatePicker GridPane.rowIndex="3" />
-
+  <Label text="Text at top" GridPane.rowIndex="0"/>
+  <Accordion GridPane.rowIndex="1" expandedPane="$idView">
+    <panes>
+      <TitledPane text="File">
+        <Label text="Open the file"/>
+      </TitledPane>
+      <TitledPane text="Settings">
+        <Label text="Settings opening"/>
+      </TitledPane>
+      <TitledPane fx:id="idView" text="View">
+        <Label text="Viewing content"/>
+      </TitledPane>
+    </panes>
+  </Accordion>
+  <Label text="Text at Bottom" GridPane.rowIndex="2"/>
   <padding>
     <Insets bottom="10"/>
   </padding>
