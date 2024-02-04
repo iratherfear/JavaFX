@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ToggleButton?>
+
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.collections.* ?>
-
-<?import java.lang.String?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Slider?>
-<?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.ColorPicker?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Button?>
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo.HelloController" alignment="CENTER">
-
-  <Label text="Text at top" GridPane.rowIndex="0"/>
-  <Accordion GridPane.rowIndex="1" expandedPane="$idView">
-    <panes>
-      <TitledPane text="File">
-        <Label text="Open the file"/>
-      </TitledPane>
-      <TitledPane text="Settings">
-        <Label text="Settings opening"/>
-      </TitledPane>
-      <TitledPane fx:id="idView" text="View">
-        <Label text="Viewing content"/>
-      </TitledPane>
-    </panes>
-  </Accordion>
-  <Label text="Text at Bottom" GridPane.rowIndex="2"/>
-  <padding>
-    <Insets bottom="10"/>
-  </padding>
+  <TextField fx:id="nameField" GridPane.rowIndex="0"/>
+  <Button text="Say Hello" GridPane.rowIndex="1" onAction="#onHelloButtonClick" />
 </GridPane>

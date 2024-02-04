@@ -1,14 +1,16 @@
 package org.example.demo;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private TextField nameField;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onHelloButtonClick(ActionEvent e) {
+        System.out.println("Hello, " + nameField.getText());
+        System.out.println("Button pressed: " + e.getSource());
     }
 }
